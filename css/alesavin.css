@@ -1,56 +1,156 @@
+/* alesav.in — mono / terminal direction
+ * Palette preserved from the original Bootstrap-based site:
+ *   text   #222     muted  #555 / #999
+ *   rule   #e5e5e5  link   #337ab7
+ */
+
 body {
   padding-top: 50px;
   padding-bottom: 20px;
-  font-family: 'Inter', sans-serif;
+  margin: 0;
+  font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 13px;
+  line-height: 1.7;
+  color: #222;
+  background: #fff;
+}
+
+.container {
+  width: auto;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
 @media (min-width: 600px) {
-  .container {
-    max-width: 550px;
+  .container.page {
+    max-width: 560px;
   }
 }
 
-.section-title {
-  margin-bottom: 0;
-}
-
-.section-title h2 {
-  margin: 0;
-}
-
-.section-profile {
-  padding: 10px 0;
-}
-
-.section-profile img {
-  margin-right: 15px;
-}
-
-.section-profile .text-end {
-  padding-top: 10px;
-}
-
-.section-also {
-  display: flex;
-  align-items: baseline;
-  font-size: 13px;
-  color: #555;
-}
-
-.also-label {
-  flex-shrink: 0;
-  margin-right: 0.3em;
-}
-
-.section-copyright {
-  font-size: 11px;
-  color: #999;
-  padding-bottom: 20px;
-  text-align: center;
+a {
+  color: #337ab7;
 }
 
 hr {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  border-color: #e5e5e5;
+  margin: 18px 0;
+  border: 0;
+  border-top: 1px solid #e5e5e5;
+}
+
+.topbar {
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  color: #999;
+}
+
+.caret {
+  color: #337ab7;
+}
+
+/* --- Hero ----------------------------------------------------- */
+
+.hero {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 24px;
+  align-items: center;
+  padding: 6px 0;
+}
+
+.hero .avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+}
+
+.hero .prompt {
+  font-size: 11px;
+  color: #999;
+  margin-bottom: 6px;
+}
+
+.hero h1 {
+  font-family: inherit;
+  font-size: 28px;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+  margin: 0;
+}
+
+.hero h1 a {
+  color: #222;
+  text-decoration: none;
+}
+
+.hero h1 .x {
+  color: #337ab7;
+}
+
+.hero .byline {
+  margin-top: 8px;
+  font-size: 12.5px;
+  color: #555;
+}
+
+.hero .links {
+  margin-top: 16px;
+  display: flex;
+  gap: 16px;
+  font-size: 13px;
+}
+
+.hero .links a {
+  color: #337ab7;
+  text-decoration: none;
+  border-bottom: 1px solid #337ab7;
+  padding-bottom: 1px;
+}
+
+/* --- "ls also/" divider --------------------------------------- */
+
+.ls-divider {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 11px;
+  color: #999;
+  margin: 24px 0 18px;
+}
+
+.ls-divider .rule {
+  flex: 1;
+  border-top: 1px dashed #e5e5e5;
+  margin-top: 1px;
+}
+
+/* --- "also" link list ----------------------------------------- */
+
+.section-also {
+  font-size: 12.5px;
+  line-height: 1.9;
+  color: #555;
+}
+
+.section-also a {
+  white-space: nowrap;          /* never break inside an item */
+  color: #337ab7;
+  text-decoration: underline;
+  text-decoration-color: #b9d3e8;
+  text-underline-offset: 2px;
+}
+
+.section-also .sep {
+  color: #999;
+}
+
+/* --- Footer --------------------------------------------------- */
+
+.section-copyright {
+  font-size: 10.5px;
+  color: #999;
+  text-align: center;
+  padding-bottom: 20px;
 }
