@@ -1,6 +1,7 @@
 body {
   padding-top: 50px;
   padding-bottom: 20px;
+  font-family: 'Inter', sans-serif;
 }
 
 @media (min-width: 600px) {
@@ -38,6 +39,7 @@ body {
   font-size: 11px;
   color: #999;
   padding-bottom: 20px;
+  text-align: center;
 }
 
 hr {
