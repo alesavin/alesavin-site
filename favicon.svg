@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  
+  <rect width="64" height="64" rx="10" fill="#ffffff"></rect>
+  <rect x="0.5" y="0.5" width="63" height="63" rx="9.5" fill="none" stroke="#e5e5e5"></rect>
+
+  <g font-family="ui-monospace, &#39;JetBrains Mono&#39;, Menlo, monospace" font-weight="500" font-size="18" letter-spacing="-0.5">
+    <text x="8" y="20" fill="#222222">ale</text>
+    <text x="8" y="40" fill="#222222">sav<tspan fill="#337ab7">.</tspan></text>
+    <text x="8" y="62" fill="#222222">in</text>
+  </g>
+</svg>
