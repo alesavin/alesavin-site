@@ -18,13 +18,12 @@ There are no build, lint, or test commands.
 
 ## Architecture
 
-Single-page site (`index.html`) using Bootstrap 3 (vendored in `css/` and `js/`). Custom styles live in `css/alesavin.css`.
+Single-page site (`index.html`) with no framework — custom CSS only (`css/alesavin.css`). Uses JetBrains Mono via Google Fonts. Terminal/mono aesthetic.
 
 - `cv/` — PDF/DOC resume files; `cv/links.sh` creates symlinks to the current version
 - `img/` — Profile photos (circle-cropped)
-- `fonts/` — Bootstrap Glyphicons font files
 
-The page embeds Google Analytics (ID: `G-V5VZFRWXK2`) and a Twitter timeline widget.
+The page embeds Google Analytics (ID: `G-V5VZFRWXK2`).
 
 ## Common Maintenance Tasks
 
